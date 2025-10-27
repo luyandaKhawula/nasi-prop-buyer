@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="nasi-prop-logo-nobg.png">
+  <title>Property Journey Academy | Nasi Properties</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-black font-sans">
+  <!-- Top Info Bar -->
+  <div class="bg-[#0b2974] text-white text-sm md:px-8 px-4 py-4">
+    <div class="flex max-w-7xl mx-auto justify-between md:space-x-8">
+        <div class="hidden md:flex space-x-6">
+        <span class="flex items-center space-x-2">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@nasiproperties.co.za" class="hover:text-blue-200">info@nasiproperties.co.za</a>
+        </span>
+        <span class="flex items-center space-x-2">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>10 The Castle, 20 Castle Road, Assagay</span>
+        </span>
+        </div>
+        <div class="md:flex items-center space-x-4">
+        <a href="#" class="hover:text-blue-200"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-200"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-200"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-blue-200"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="list-your-property.html" class="bg-white text-[#0b2974] px-4 py-1 rounded ml-2 font-semibold hover:bg-blue-100 transition">Add Listing</a>
+        </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+<header class="max-w-7xl mx-auto flex justify-between items-center md:px-8 px-4 py-4 relative z-50">
+  <!-- Logo -->
+  <div class="flex items-center">
+    <img src="nasi-prop-logo-nobg.png" alt="Nasi Properties Logo" class="w-28 md:w-32">
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="space-x-8 hidden md:flex items-center text-lg">
+    <a href="index.html" class="hover:text-[#0b2974] font-semibold">Home</a>
+    <a href="for-buyers.html" class="hover:text-[#0b2974] font-semibold">For Buyers</a>
+    <a href="for-sellers.html" class="hover:text-[#0b2974] font-semibold">For Sellers</a>
+    <a href="property-academy.html" class="text-[#0b2974] font-bold">Property Academy</a>
+    <a href="listings.html" class="hover:text-[#0b2974] font-semibold">Listings</a>
+    <a href="about.html" class="hover:text-[#0b2974] font-semibold">About Us</a>
+    <a href="contact.html" class="hover:text-[#0b2974] font-semibold">Contact</a>
+  </nav>
+
+  <!-- Icons + Hamburger -->
+  <div class="flex items-center space-x-4">
+    <i class="fa-solid fa-magnifying-glass text-gray-600 cursor-pointer text-xl md:text-2xl"></i>
+    <i class="fa-solid fa-user text-gray-600 cursor-pointer hover:text-[#0b2974] text-xl md:text-2xl"></i>
+
+    <!-- Hamburger -->
+    <button id="menu-btn" class="md:hidden text-2xl text-[#0b2974] focus:outline-none">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-md flex flex-col text-center py-6 space-y-4 md:hidden">
+    <a href="index.html" class="hover:text-[#0b2974] font-semibold">Home</a>
+    <a href="for-buyers.html" class="hover:text-[#0b2974] font-semibold">For Buyers</a>
+    <a href="for-sellers.html" class="hover:text-[#0b2974] font-semibold">For Sellers</a>
+    <a href="property-academy.html" class="text-[#0b2974] font-bold">Property Academy</a>
+    <a href="listings.html" class="hover:text-[#0b2974] font-semibold">Listings</a>
+    <a href="about.html" class="hover:text-[#0b2974] font-semibold">About Us</a>
+    <a href="contact.html" class="hover:text-[#0b2974] font-semibold">Contact</a>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section 
+    class="relative bg-cover bg-center text-white" 
+    style="background-image: url('hero.webp'); min-height: 50vh;">
+    
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-[#0b2974]/70"></div>
+
+    <div class="relative max-w-7xl mx-auto z-10 flex flex-col items-center justify-center text-center px-8 md:px-20 py-20">
+      <div class="flex items-center space-x-2 mb-4">
+        <i class="fa-solid fa-graduation-cap text-blue-200"></i>
+        <span class="text-sm font-medium text-blue-100">Learn, Prepare, Succeed</span>
+      </div>
+      <h1 class="text-5xl font-extrabold leading-tight mb-6">
+        Your Property <span class="text-blue-200">Education Hub</span>
+      </h1>
+      <p class="text-white mb-8 text-lg font-semibold leading-relaxed max-w-3xl">
+        Knowledge is your greatest advantage in property. Access expert guidance, comprehensive resources, 
+        and insider insights to make confident, informed decisions.
+      </p>
+      <a href="#categories" class="bg-white text-[#0b2974] px-8 py-3 rounded font-semibold hover:bg-blue-100 transition">
+        Explore Resources
+      </a>
+    </div>
+  </section>
+
+  <!-- Value Proposition -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fa-solid fa-book-open text-3xl text-[#0b2974]"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#0b2974] mb-2">Expert Knowledge</h3>
+          <p class="text-gray-600">
+            Learn from industry professionals with years of experience in the South African property market.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fa-solid fa-route text-3xl text-[#0b2974]"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#0b2974] mb-2">Step-by-Step Guidance</h3>
+          <p class="text-gray-600">
+            Structured learning paths that take you from property beginner to confident investor or buyer.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fa-solid fa-chart-line text-3xl text-[#0b2974]"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#0b2974] mb-2">Market Insights</h3>
+          <p class="text-gray-600">
+            Stay informed with the latest trends, data, and forecasts for the South African property landscape.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academy Categories -->
+  <section id="categories" class="py-16 bg-[#f8faff]">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      
+      <!-- First-Time Buyer Academy -->
+      <div class="mb-16">
+        <div class="flex items-center space-x-3 mb-8">
+          <div class="w-12 h-12 bg-[#0b2974] rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-house-user text-white text-xl"></i>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-[#0b2974]">First-Time Buyer Academy</h2>
+            <p class="text-gray-600">Essential knowledge for your first property purchase</p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Article Card 1 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+              <i class="fa-solid fa-file-invoice-dollar text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">FINANCE</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">The Complete Bond Application Guide</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Everything you need to know about applying for a home loan, from credit scores to documentation requirements.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article Card 2 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center">
+              <i class="fa-solid fa-calculator text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-green-600 bg-green-100 px-2 py-1 rounded">COSTS</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Understanding Transfer Costs & Fees</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                A comprehensive breakdown of all the costs involved in purchasing property beyond the purchase price.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article Card 3 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center">
+              <i class="fa-solid fa-triangle-exclamation text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-red-600 bg-red-100 px-2 py-1 rounded">MISTAKES</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">10 Common First-Time Buyer Mistakes</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Learn from others' mistakes. Avoid these common pitfalls that can cost you time and money.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article Card 4 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+              <i class="fa-solid fa-money-bill-trend-up text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-purple-600 bg-purple-100 px-2 py-1 rounded">AFFORDABILITY</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">How Much Property Can You Afford?</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Use our affordability calculator and expert guidance to determine your realistic property budget.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article Card 5 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-yellow-500 to-yellow-700 flex items-center justify-center">
+              <i class="fa-solid fa-clipboard-check text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-yellow-600 bg-yellow-100 px-2 py-1 rounded">CHECKLIST</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Property Viewing Checklist</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                What to look for during property viewings and questions you must ask before making an offer.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article Card 6 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center">
+              <i class="fa-solid fa-scale-balanced text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-indigo-600 bg-indigo-100 px-2 py-1 rounded">LEGAL</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Understanding Offer to Purchase</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Demystifying the legal agreement that starts your property purchase journey.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Investor Insights -->
+      <div class="mb-16">
+        <div class="flex items-center space-x-3 mb-8">
+          <div class="w-12 h-12 bg-[#0b2974] rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-chart-pie text-white text-xl"></i>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-[#0b2974]">Investor Insights</h2>
+            <p class="text-gray-600">Strategic property investment knowledge</p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Investor Card 1 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center">
+              <i class="fa-solid fa-percent text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-teal-600 bg-teal-100 px-2 py-1 rounded">ROI</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Calculating Rental Yield Like a Pro</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Master the formulas and factors that determine your investment property's profitability.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Investor Card 2 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center">
+              <i class="fa-solid fa-map-location-dot text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-orange-600 bg-orange-100 px-2 py-1 rounded">LOCATION</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Emerging Suburbs with Growth Potential</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Data-driven insights into which areas are poised for capital appreciation in 2025-2026.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Investor Card 3 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-pink-500 to-pink-700 flex items-center justify-center">
+              <i class="fa-solid fa-receipt text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-pink-600 bg-pink-100 px-2 py-1 rounded">TAX</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Tax Benefits for Property Investors</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Understanding deductions, depreciation, and tax advantages available to investment property owners.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Investor Card 4 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-cyan-500 to-cyan-700 flex items-center justify-center">
+              <i class="fa-solid fa-key text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-cyan-600 bg-cyan-100 px-2 py-1 rounded">STRATEGY</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Buy-to-Let Success Strategies</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Proven approaches to finding, purchasing, and managing profitable rental properties.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Investor Card 5 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-lime-500 to-lime-700 flex items-center justify-center">
+              <i class="fa-solid fa-chart-line text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-lime-600 bg-lime-100 px-2 py-1 rounded">TRENDS</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">2025 South African Market Trends</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Expert analysis of current market conditions and forecast for the year ahead.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Investor Card 6 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center">
+              <i class="fa-solid fa-building-circle-check text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-amber-600 bg-amber-100 px-2 py-1 rounded">PORTFOLIO</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Building a Property Portfolio</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                From single property to multiple investments: scaling your property business strategically.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Ownership -->
+      <div>
+        <div class="flex items-center space-x-3 mb-8">
+          <div class="w-12 h-12 bg-[#0b2974] rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-house-chimney text-white text-xl"></i>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-[#0b2974]">Home Ownership Mastery</h2>
+            <p class="text-gray-600">Expert guidance for existing homeowners</p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Home Ownership Card 1 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-slate-500 to-slate-700 flex items-center justify-center">
+              <i class="fa-solid fa-wrench text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-slate-600 bg-slate-100 px-2 py-1 rounded">MAINTENANCE</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Home Maintenance Planning & Budgeting</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Create a proactive maintenance schedule and budget to protect your property investment.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Home Ownership Card 2 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center">
+              <i class="fa-solid fa-shield-halved text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-emerald-600 bg-emerald-100 px-2 py-1 rounded">INSURANCE</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Understanding Levies & Home Insurance</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Comprehensive guide to sectional title levies, HOA fees, and essential insurance coverage.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Home Ownership Card 3 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-rose-500 to-rose-700 flex items-center justify-center">
+              <i class="fa-solid fa-arrow-trend-up text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-rose-600 bg-rose-100 px-2 py-1 rounded">VALUE</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Smart Renovations That Add Value</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Which home improvements offer the best return on investment when it's time to sell.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Home Ownership Card 4 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-sky-500 to-sky-700 flex items-center justify-center">
+              <i class="fa-solid fa-bolt text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-sky-600 bg-sky-100 px-2 py-1 rounded">EFFICIENCY</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Energy Efficiency & Cost Savings</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Practical solutions for reducing your home's energy consumption and utility bills.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Home Ownership Card 5 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-violet-500 to-violet-700 flex items-center justify-center">
+              <i class="fa-solid fa-lock text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-violet-600 bg-violet-100 px-2 py-1 rounded">SECURITY</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Home Security Best Practices</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Protect your property and family with these essential security measures and smart technology.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Home Ownership Card 6 -->
+          <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-fuchsia-500 to-fuchsia-700 flex items-center justify-center">
+              <i class="fa-solid fa-leaf text-6xl text-white opacity-80"></i>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-semibold text-fuchsia-600 bg-fuchsia-100 px-2 py-1 rounded">SUSTAINABLE</span>
+              <h3 class="text-xl font-bold text-[#0b2974] mt-3 mb-2">Sustainable Living at Home</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Environmentally-friendly practices that benefit both the planet and your pocket.
+              </p>
+              <a href="#" class="text-[#1b4ad8] font-semibold hover:underline flex items-center">
+                Read More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 md:px-10">
+      <div class="bg-gradient-to-r from-[#0b2974] to-[#1b4ad8] rounded-2xl p-10 md:p-12 text-white">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fa-solid fa-gift text-3xl"></i>
+              <span class="text-sm font-semibold uppercase tracking-wide">Free Download</span>
+            </div>
+            <h2 class="text-3xl font-bold mb-4">Property Readiness Toolkit</h2>
+            <p class="text-blue-100 mb-6 leading-relaxed">
+              Get instant access to our comprehensive toolkit including:
+            </p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-check-circle text-blue-200 mt-1"></i>
+                <span>12-Month Property Planning Checklist</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-check-circle text-blue-200 mt-1"></i>
+                <span>Bond Pre-Approval Step-by-Step Guide</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-check-circle text-blue-200 mt-1"></i>
+                <span>Hidden Cost Calculator Spreadsheet</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-check-circle text-blue-200 mt-1"></i>
+                <span>Property Viewing Checklist</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-check-circle text-blue-200 mt-1"></i>
+                <span>Suburb Comparison Template</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl p-8 text-black">
+            <h3 class="text-2xl font-bold text-[#0b2974] mb-6">Download Your Free Toolkit</h3>
+            <form class="space-y-4">
+              <div>
+                <input type="text" placeholder="Your Name" 
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              </div>
+              <div>
+                <input type="email" placeholder="Your Email" 
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              </div>
+              <div>
+                <select class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+                  <option>When are you planning to buy?</option>
+                  <option>Just exploring (12+ months)</option>
+                  <option>Starting to look (6-12 months)</option>
+                  <option>Getting serious (3-6 months)</option>
+                  <option>Ready now (0-3 months)</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full bg-[#0b2974] text-white font-bold py-3 rounded-lg hover:bg-blue-900 transition">
+                Get My Free Toolkit
+              </button>
+              <p class="text-xs text-gray-500 text-center">
+                <i class="fa-solid fa-lock mr-1"></i> We respect your privacy. Unsubscribe anytime.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-16 bg-[#f8faff]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="mb-6">
+        <i class="fa-solid fa-envelope-open-text text-5xl text-[#0b2974]"></i>
+      </div>
+      <h2 class="text-3xl font-bold text-[#0b2974] mb-4">Subscribe to Monthly Property Insights</h2>
+      <p class="text-gray-600 mb-8 text-lg">
+        Get expert articles, market updates, and exclusive tips delivered to your inbox every month.
+      </p>
+      <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+        <input type="email" placeholder="Enter your email address" 
+          class="flex-1 px-6 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0b2974] outline-none">
+        <button type="submit" class="bg-[#0b2974] text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-900 transition">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-sm text-gray-500 mt-4">Join 5,000+ property enthusiasts already learning with us</p>
+    </div>
+  </section>
+
+  <!-- Video Resources Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      <div class="text-center mb-12">
+        <span class="text-sm uppercase tracking-widest text-blue-900 bg-blue-100 px-3 py-1 rounded-full">
+          Video Learning
+        </span>
+        <h2 class="text-4xl font-bold text-[#0b2974] mt-4">Expert Video Resources</h2>
+        <p class="text-gray-600 mt-2">Visual guides to make complex topics simple</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Video 1 -->
+        <div class="bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+          <div class="relative h-48 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
+            <i class="fa-solid fa-circle-play text-6xl text-white opacity-80 cursor-pointer hover:opacity-100 transition"></i>
+            <span class="absolute top-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">12:45</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#0b2974] mb-2">Property Buying Process Explained</h3>
+            <p class="text-gray-600 text-sm">A complete walkthrough from viewing to transfer, simplified.</p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+          <div class="relative h-48 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
+            <i class="fa-solid fa-circle-play text-6xl text-white opacity-80 cursor-pointer hover:opacity-100 transition"></i>
+            <span class="absolute top-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">8:30</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#0b2974] mb-2">How to Negotiate Like a Pro</h3>
+            <p class="text-gray-600 text-sm">Expert negotiation tactics to secure the best deal on your property.</p>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+          <div class="relative h-48 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
+            <i class="fa-solid fa-circle-play text-6xl text-white opacity-80 cursor-pointer hover:opacity-100 transition"></i>
+            <span class="absolute top-4 right-4 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">15:20</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-[#0b2974] mb-2">Investment Property Analysis</h3>
+            <p class="text-gray-600 text-sm">Step-by-step guide to evaluating rental property investments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-[#0b2974] text-white">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold mb-6">Ready to Turn Knowledge into Action?</h2>
+      <p class="text-blue-100 text-lg mb-8 leading-relaxed">
+        Join thousands of South Africans who are taking control of their property journey with confidence. 
+        Start your journey with us today.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="for-buyers.html" class="bg-white text-[#0b2974] font-bold px-8 py-4 rounded-lg hover:bg-blue-100 transition">
+          I'm Buying - Start My Journey
+        </a>
+        <a href="for-sellers.html" class="bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-[#0b2974] transition">
+          I'm Selling - Get Buyer Report
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-[#0b2974] text-white py-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+    
+    <!-- Logo & About -->
+    <div>
+      <img src="nasi-prop-logo-nobg.png" alt="Nasi Properties Logo" class="w-32 mb-4">
+      <p class="text-blue-100 text-sm leading-relaxed">
+         We connect people with homes. Professional guidance, transparent process, and growth-focused decisions.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="font-bold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm text-blue-100">
+        <li><a href="for-buyers.html" class="hover:text-white">For Buyers</a></li>
+        <li><a href="for-sellers.html" class="hover:text-white">For Sellers</a></li>
+        <li><a href="listings.html" class="hover:text-white">Listings</a></li>
+        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div>
+      <h3 class="font-bold mb-4">Resources</h3>
+      <ul class="space-y-2 text-sm text-blue-100">
+        <li><a href="property-academy.html" class="hover:text-white">Property Academy</a></li>
+        <li><a href="#" class="hover:text-white">Bond Calculator</a></li>
+        <li><a href="#" class="hover:text-white">FAQs</a></li>
+        <li><a href="#" class="hover:text-white">Terms & Privacy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="font-bold mb-4">Get in Touch</h3>
+      <ul class="space-y-2 text-sm text-blue-100">
+        <li><i class="fa-solid fa-envelope mr-2"></i><a href="mailto:info@nasiproperties.co.za" class="hover:text-white">info@nasiproperties.co.za</a></li>
+        <li><i class="fa-solid fa-phone mr-2"></i> +27 31 555 1234</li>
+        <li><i class="fa-solid fa-location-dot mr-2"></i> 10 The Castle, 20 Castle Road, Assagay</li>
+      </ul>
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="hover:text-blue-300"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-300"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-300"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-blue-300"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="border-t border-blue-800 mt-10 pt-6 text-center text-sm text-blue-200">
+    © <span id="year"></span> Nasi Properties. All rights reserved.
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      isOpen = !isOpen;
+      mobileMenu.classList.toggle('hidden', !isOpen);
+      menuBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Close mobile menu if open
+          mobileMenu.classList.add('hidden');
+          isOpen = false;
+          menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }
+      });
+    });
+  </script>
+</footer>
+
+</body>
+</html>

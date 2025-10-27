@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="nasi-prop-logo-nobg.png">
+  <title>For Buyers | Start Your Property Journey | Nasi Properties</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-black font-sans">
+  <!-- Top Info Bar -->
+  <div class="bg-[#0b2974] text-white text-sm md:px-8 px-4 py-4">
+    <div class="flex max-w-7xl mx-auto justify-between md:space-x-8">
+        <div class="hidden md:flex space-x-6">
+        <span class="flex items-center space-x-2">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@nasiproperties.co.za" class="hover:text-blue-200">info@nasiproperties.co.za</a>
+        </span>
+        <span class="flex items-center space-x-2">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>10 The Castle, 20 Castle Road, Assagay</span>
+        </span>
+        </div>
+        <div class="md:flex items-center space-x-4">
+        <a href="#" class="hover:text-blue-200"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-200"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-200"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-blue-200"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#register" class="bg-white text-[#0b2974] px-4 py-1 rounded ml-2 font-semibold hover:bg-blue-100 transition">Register Now</a>
+        </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+<header class="max-w-7xl mx-auto flex justify-between items-center md:px-8 px-4 py-4 relative z-50">
+  <div class="flex items-center">
+    <img src="nasi-prop-logo-nobg.png" alt="Nasi Properties Logo" class="w-28 md:w-32">
+  </div>
+
+  <nav class="space-x-8 hidden md:flex items-center text-lg">
+    <a href="index.html" class="hover:text-[#0b2974] font-semibold">Home</a>
+    <a href="for-buyers.html" class="text-[#0b2974] font-bold">For Buyers</a>
+    <a href="for-sellers.html" class="hover:text-[#0b2974] font-semibold">For Sellers</a>
+    <a href="property-academy.html" class="hover:text-[#0b2974] font-semibold">Property Academy</a>
+    <a href="listings.html" class="hover:text-[#0b2974] font-semibold">Listings</a>
+    <a href="about.html" class="hover:text-[#0b2974] font-semibold">About Us</a>
+    <a href="contact.html" class="hover:text-[#0b2974] font-semibold">Contact</a>
+  </nav>
+
+  <div class="flex items-center space-x-4">
+    <i class="fa-solid fa-magnifying-glass text-gray-600 cursor-pointer text-xl md:text-2xl"></i>
+    <i class="fa-solid fa-user text-gray-600 cursor-pointer hover:text-[#0b2974] text-xl md:text-2xl"></i>
+
+    <button id="menu-btn" class="md:hidden text-2xl text-[#0b2974] focus:outline-none">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-md flex flex-col text-center py-6 space-y-4 md:hidden">
+    <a href="index.html" class="hover:text-[#0b2974] font-semibold">Home</a>
+    <a href="for-buyers.html" class="text-[#0b2974] font-bold">For Buyers</a>
+    <a href="for-sellers.html" class="hover:text-[#0b2974] font-semibold">For Sellers</a>
+    <a href="property-academy.html" class="hover:text-[#0b2974] font-semibold">Property Academy</a>
+    <a href="listings.html" class="hover:text-[#0b2974] font-semibold">Listings</a>
+    <a href="about.html" class="hover:text-[#0b2974] font-semibold">About Us</a>
+    <a href="contact.html" class="hover:text-[#0b2974] font-semibold">Contact</a>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-[#0b2974] to-blue-900 text-white py-20">
+    <div class="max-w-5xl mx-auto text-center px-6">
+      <div class="flex items-center justify-center space-x-2 mb-4">
+        <i class="fa-solid fa-home text-blue-200 text-2xl"></i>
+        <span class="text-sm font-medium text-blue-100 uppercase tracking-wider">Your Property Journey Starts Here</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+        Your Property Journey Partner:<br>From First Savings to <span class="text-blue-200">First Keys</span>
+      </h1>
+      <p class="text-white text-lg md:text-xl mb-8 leading-relaxed">
+        Whether you're just dreaming about property or ready to buy tomorrow, we'll guide you every step of the way.
+      </p>
+    </div>
+  </section>
+
+  <!-- Journey Stage Selector -->
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-[#0b2974] mb-4">Where Are You in Your Property Journey?</h2>
+        <p class="text-gray-600">Select your stage to see how we can help you</p>
+      </div>
+
+      <!-- Stage Tabs -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <!-- Future Planner -->
+        <div class="stage-tab bg-gradient-to-br from-blue-50 to-white border-2 border-[#0b2974] rounded-xl p-6 cursor-pointer hover:shadow-lg transition active" data-stage="future-planner">
+          <div class="text-center">
+            <div class="text-4xl mb-3">🚀</div>
+            <h4 class="text-xl font-bold text-[#0b2974] mb-2">Future Planner</h4>
+            <p class="text-gray-600 text-sm">Just starting to think about property</p>
+            <p class="text-[#0b2974] font-semibold text-sm mt-2">(3-12 months away)</p>
+          </div>
+        </div>
+
+        <!-- Active Researcher -->
+        <div class="stage-tab bg-white border-2 border-gray-300 rounded-xl p-6 cursor-pointer hover:shadow-lg transition" data-stage="active-researcher">
+          <div class="text-center">
+            <div class="text-4xl mb-3">🔍</div>
+            <h4 class="text-xl font-bold text-gray-700 mb-2">Active Researcher</h4>
+            <p class="text-gray-600 text-sm">Getting serious and looking at options</p>
+            <p class="text-gray-500 font-semibold text-sm mt-2">(1-6 months away)</p>
+          </div>
+        </div>
+
+        <!-- Ready to Buy -->
+        <div class="stage-tab bg-white border-2 border-gray-300 rounded-xl p-6 cursor-pointer hover:shadow-lg transition" data-stage="ready-to-buy">
+          <div class="text-center">
+            <div class="text-4xl mb-3">🎯</div>
+            <h4 class="text-xl font-bold text-gray-700 mb-2">Ready to Buy</h4>
+            <p class="text-gray-600 text-sm">Pre-approved and ready to make an offer</p>
+            <p class="text-gray-500 font-semibold text-sm mt-2">(0-3 months away)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage Content Sections -->
+      
+      <!-- Future Planner Content -->
+      <div id="future-planner-content" class="stage-content">
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 md:p-12">
+          <h3 class="text-3xl font-bold text-[#0b2974] mb-4">Start Smart, Start Early</h3>
+          <p class="text-gray-700 text-lg mb-8">
+            Property success begins long before you start viewing homes. Let us help you build the foundation for your property journey.
+          </p>
+
+          <!-- Benefits Grid -->
+          <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">💰</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Financial Readiness Audit</h4>
+              <p class="text-gray-600 text-sm">
+                Understand exactly what you can afford and how to improve your financial position for better bond approval.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">📚</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Property Education Hub</h4>
+              <p class="text-gray-600 text-sm">
+                Access our library of guides, checklists, and market insights to become an informed buyer.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">🎯</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Priority Buyer Status</h4>
+              <p class="text-gray-600 text-sm">
+                Get early access to properties when you're ready to buy, often before they hit the public market.
+              </p>
+            </div>
+          </div>
+
+          <!-- Lead Magnet -->
+          <div class="bg-white rounded-xl p-8 shadow-lg border-2 border-[#0b2974]" id="register">
+            <h4 class="text-2xl font-bold text-[#0b2974] mb-3">Download Your Free Property Readiness Toolkit</h4>
+            <p class="text-gray-600 mb-6">
+              <strong>Includes:</strong> 12-Month Planning Checklist, Bond Pre-Approval Guide, Hidden Cost Calculator
+            </p>
+            <form class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Your Full Name" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <input type="email" placeholder="Your Email Address" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <input type="tel" placeholder="Your Phone Number" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <select required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+                <option value="">When are you planning to buy?</option>
+                <option>Just exploring (12+ months)</option>
+                <option>Starting to look (6-12 months)</option>
+                <option>Getting serious (3-6 months)</option>
+              </select>
+              <div class="md:col-span-2">
+                <select required
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none mb-4">
+                  <option value="">Estimated Budget Range</option>
+                  <option>R500k - R1M</option>
+                  <option>R1M - R2M</option>
+                  <option>R2M - R3M</option>
+                  <option>R3M - R5M</option>
+                  <option>R5M+</option>
+                </select>
+              </div>
+              <div class="md:col-span-2">
+                <button type="submit"
+                  class="bg-[#0b2974] text-white font-semibold w-full py-4 rounded-lg hover:bg-blue-900 transition text-lg">
+                  <i class="fa-solid fa-download mr-2"></i>Get My Free Toolkit & Register
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Researcher Content -->
+      <div id="active-researcher-content" class="stage-content hidden">
+        <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 md:p-12">
+          <h3 class="text-3xl font-bold text-[#0b2974] mb-4">Turn Research into Reality</h3>
+          <p class="text-gray-700 text-lg mb-8">
+            You're getting serious about buying. Let us accelerate your journey with expert guidance and exclusive opportunities.
+          </p>
+
+          <!-- Benefits Grid -->
+          <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">🏠</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Personalized Property Matching</h4>
+              <p class="text-gray-600 text-sm">
+                We'll match you with properties that fit your specific criteria, often before they're publicly listed.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">🏦</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Bond Pre-Approval Assistance</h4>
+              <p class="text-gray-600 text-sm">
+                Connect with our preferred bond originators for fast-track pre-approval to strengthen your offers.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">📍</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Area & Suburb Insights</h4>
+              <p class="text-gray-600 text-sm">
+                Get detailed reports on schools, amenities, growth trends, and investment potential for your target areas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Registration Form -->
+          <div class="bg-white rounded-xl p-8 shadow-lg border-2 border-green-600">
+            <h4 class="text-2xl font-bold text-[#0b2974] mb-3">Register for Property Alerts & Expert Support</h4>
+            <p class="text-gray-600 mb-6">
+              Get notified immediately when properties matching your criteria become available.
+            </p>
+            <form class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Your Full Name" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <input type="email" placeholder="Your Email Address" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <input type="tel" placeholder="Your Phone Number" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <select required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+                <option value="">Preferred Property Type</option>
+                <option>House</option>
+                <option>Apartment</option>
+                <option>Townhouse</option>
+                <option>Vacant Land</option>
+              </select>
+              <input type="text" placeholder="Preferred Location/Suburb" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <select required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+                <option value="">Budget Range</option>
+                <option>R500k - R1M</option>
+                <option>R1M - R2M</option>
+                <option>R2M - R3M</option>
+                <option>R3M - R5M</option>
+                <option>R5M+</option>
+              </select>
+              <div class="md:col-span-2">
+                <button type="submit"
+                  class="bg-[#0b2974] text-white font-semibold w-full py-4 rounded-lg hover:bg-blue-900 transition text-lg">
+                  <i class="fa-solid fa-bell mr-2"></i>Register & Get Property Alerts
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ready to Buy Content -->
+      <div id="ready-to-buy-content" class="stage-content hidden">
+        <div class="bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-8 md:p-12">
+          <h3 class="text-3xl font-bold text-[#0b2974] mb-4">Let's Find Your Perfect Match</h3>
+          <p class="text-gray-700 text-lg mb-8">
+            You're pre-approved and ready to act fast. Get immediate access to our exclusive buyer network benefits.
+          </p>
+
+          <!-- Benefits Grid -->
+          <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">⚡</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Priority Access</h4>
+              <p class="text-gray-600 text-sm">
+                See new listings first, often 24-48 hours before they go public. First viewing, first offer advantage.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">🤝</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Dedicated Agent Support</h4>
+              <p class="text-gray-600 text-sm">
+                A personal property expert available for viewings, negotiations, and closing the deal quickly.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="text-3xl mb-3">📝</div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Offer Preparation</h4>
+              <p class="text-gray-600 text-sm">
+                Expert guidance on structuring competitive offers and navigating negotiations to secure your dream home.
+              </p>
+            </div>
+          </div>
+
+          <!-- Urgent Registration Form -->
+          <div class="bg-white rounded-xl p-8 shadow-lg border-2 border-yellow-500">
+            <h4 class="text-2xl font-bold text-[#0b2974] mb-3">Schedule Your Consultation Now</h4>
+            <p class="text-gray-600 mb-6">
+              <strong>Priority Service:</strong> We'll contact you within 2 hours to start your property search.
+            </p>
+            <form class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Your Full Name" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <input type="email" placeholder="Your Email Address" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <input type="tel" placeholder="Your Phone Number" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <input type="text" placeholder="Bond Pre-Approval Amount" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <select required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+                <option value="">Preferred Property Type</option>
+                <option>House</option>
+                <option>Apartment</option>
+                <option>Townhouse</option>
+                <option>Vacant Land</option>
+              </select>
+              <input type="text" placeholder="Target Location/Suburb" required
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none">
+              <div class="md:col-span-2">
+                <textarea placeholder="Specific requirements (bedrooms, bathrooms, features, etc.)" rows="3"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0b2974] outline-none mb-4"></textarea>
+              </div>
+              <div class="md:col-span-2">
+                <button type="submit"
+                  class="bg-[#0b2974] text-white font-semibold w-full py-4 rounded-lg hover:bg-blue-900 transition text-lg">
+                  <i class="fa-solid fa-rocket mr-2"></i>Get Priority Access - Contact Me ASAP
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Register Early -->
+  <section class="bg-[#f8faff] py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-[#0b2974] mb-4">Why Register with Nasi Properties?</h2>
+        <p class="text-gray-600">Join 247 active buyers already in our network</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-start mb-4">
+            <div class="bg-blue-100 rounded-full p-3 mr-4">
+              <i class="fa-solid fa-eye text-[#0b2974] text-2xl"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">See Properties First</h4>
+              <p class="text-gray-600">
+                Many properties sell before hitting major portals. Our registered buyers get first dibs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-start mb-4">
+            <div class="bg-blue-100 rounded-full p-3 mr-4">
+              <i class="fa-solid fa-bullseye text-[#0b2974] text-2xl"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Perfect Matching</h4>
+              <p class="text-gray-600">
+                Stop wasting time on properties that don't fit. We only show you homes that match your criteria.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-start mb-4">
+            <div class="bg-blue-100 rounded-full p-3 mr-4">
+              <i class="fa-solid fa-graduation-cap text-[#0b2974] text-2xl"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">Free Education</h4>
+              <p class="text-gray-600">
+                Access our Property Journey Academy with guides, webinars, and expert advice at no cost.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-start mb-4">
+            <div class="bg-blue-100 rounded-full p-3 mr-4">
+              <i class="fa-solid fa-shield-halved text-[#0b2974] text-2xl"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-[#0b2974] mb-2">No Pressure</h4>
+              <p class="text-gray-600">
+                Register at any stage. We're here to guide, not push. Your timeline, your journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Story -->
+  <section class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 md:p-12 border-2 border-[#0b2974] shadow-lg">
+        <div class="text-center mb-8">
+          <i class="fa-solid fa-star text-yellow-500 text-3xl mb-4"></i>
+          <h3 class="text-2xl font-bold text-[#0b2974] mb-4">Buyer Success Story</h3>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <p class="text-gray-700 text-lg italic mb-6">
+            "I registered with Nasi Properties 6 months before I was ready to buy. They didn't pressure me – instead, they sent me educational content about bond applications, hidden costs, and what to look for in a property. When I finally got my pre-approval, they already knew exactly what I wanted. Within 2 weeks, they showed me a property that wasn't even publicly listed yet. I put in an offer that same day and got it! The whole process was so smooth because they had prepared me properly."
+          </p>
+          <div class="flex items-center">
+            <div class="bg-[#0b2974] text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-2xl mr-4">
+              T
+            </div>
+            <div>
+              <div class="font-bold text-[#0b2974] text-lg">Thando Mkhize</div>
+              <div class="text-gray-600">First-Time Buyer, Durban</div>
+              <div class="text-sm text-gray-500 mt-1">Purchased: 3-Bedroom Townhouse in Glenwood</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-[#0b2974] text-white py-16">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Property Journey?</h2>
+      <p class="text-blue-100 mb-8 text-lg">
+        Join 247 buyers who are already one step ahead in the property market.
+      </p>
+      <a href="#register" class="bg-white text-[#0b2974] px-8 py-4 rounded-lg font-semibold hover:bg-blue-100 transition inline-block text-lg">
+        <i class="fa-solid fa-user-plus mr-2"></i>Register Now - It's Free
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-[#0b2974] text-white py-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+    
+    <div>
+      <img src="nasi-prop-logo-nobg.png" alt="Nasi Properties Logo" class="w-32 mb-4">
+      <p class="text-blue-100 text-sm leading-relaxed">
+        The Property Matchmakers. We connect ready buyers with willing sellers for faster, better results.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="font-bold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm text-blue-100">
+        <li><a href="for-buyers.html" class="hover:text-white">For Buyers</a></li>
+        <li><a href="for-sellers.html" class="hover:text-white">For Sellers</a></li>
+        <li><a href="listings.html" class="hover:text-white">Property Listings</a></li>
+        <li><a href="academy.html" class="hover:text-white">Property Journey Academy</a></li>
+        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-bold mb-4">Resources</h3>
+      <ul class="space-y-2 text-sm text-blue-100">
+        <li><a href="academy.html" class="hover:text-white">First-Time Buyer Guide</a></li>
+        <li><a href="academy.html" class="hover:text-white">Investor Insights</a></li>
+        <li><a href="academy.html" class="hover:text-white">Bond Calculator</a></li>
+        <li><a href="#" class="hover:text-white">Market Reports</a></li>
+        <li><a href="#" class="hover:text-white">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-bold mb-4">Get in Touch</h3>
+      <ul class="space-y-2 text-sm text-blue-100">
+        <li><i class="fa-solid fa-envelope mr-2"></i><a href="mailto:info@nasiproperties.co.za" class="hover:text-white">info@nasiproperties.co.za</a></li>
+        <li><i class="fa-solid fa-phone mr-2"></i> +27 31 555 1234</li>
+        <li><i class="fa-solid fa-location-dot mr-2"></i> 10 The Castle, 20 Castle Road, Assagay</li>
+      </ul>
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="hover:text-blue-300"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-300"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-300"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-blue-300"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="border-t border-blue-800 mt-10 pt-6 text-center text-sm text-blue-200">
+    © <span id="year"></span> Nasi Properties. All rights reserved. | The Property Matchmakers
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      isOpen = !isOpen;
+      mobileMenu.classList.toggle('hidden', !isOpen);
+      menuBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    // Stage selector functionality
+    const stageTabs = document.querySelectorAll('.stage-tab');
+    const stageContents = document.querySelectorAll('.stage-content');
+
+    stageTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const stage = tab.getAttribute('data-stage');
+
+        // Update active tab
+        stageTabs.forEach(t => {
+          t.classList.remove('active', 'border-[#0b2974]', 'from-blue-50');
+          t.classList.add('border-gray-300', 'bg-white');
+          t.querySelectorAll('h4, p').forEach(el => {
+            el.classList.remove('text-[#0b2974]');
+            el.classList.add('text-gray-700');
+          });
+        });
+
+        tab.classList.add('active', 'border-[#0b2974]', 'from-blue-50');
+        tab.classList.remove('border-gray-300');
+        tab.querySelectorAll('h4').forEach(el => {
+          el.classList.add('text-[#0b2974]');
+          el.classList.remove('text-gray-700');
+        });
+
+        // Show corresponding content
+        stageContents.forEach(content => {
+          content.classList.add('hidden');
+        });
+
+        document.getElementById(`${stage}-content`).classList.remove('hidden');
+
+        // Smooth scroll to content
+        setTimeout(() => {
+          document.getElementById(`${stage}-content`).scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest'
+          });
+        }, 100);
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          document.getElementById('mobile-menu').classList.add('hidden');
+          isOpen = false;
+          menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }
+      });
+    });
+  </script>
+</footer>
+</body>
+</html>
